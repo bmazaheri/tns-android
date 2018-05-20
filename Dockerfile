@@ -14,6 +14,10 @@ RUN npm install -g nativescript
 
 #RUN tns error-reporting disable
 
+RUN ${ANDROID_HOME}/tools/bin/sdkmanager "build-tools;27.0.3"
+RUN ${ANDROID_HOME}/tools/bin/sdkmanager "platforms;android-27"
+
+
 VOLUME ["/app","/dist"]
 
 WORKDIR /app
