@@ -4,7 +4,7 @@ RUN useradd -ms /bin/bash nativescript
 
 # Utilities
 RUN apt-get update && \
-    apt-get -y install apt-transport-https unzip curl usbutils --no-install-recommends && \
+    apt-get -y install apt-transport-https unzip curl usbutils gnupg --no-install-recommends && \
     rm -r /var/lib/apt/lists/*
 
 # JAVA
