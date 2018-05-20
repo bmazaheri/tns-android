@@ -17,7 +17,6 @@ RUN npm install -g nativescript
 RUN ${ANDROID_HOME}/tools/bin/sdkmanager "build-tools;27.0.3"
 RUN ${ANDROID_HOME}/tools/bin/sdkmanager "platforms;android-27"
 RUN ${ANDROID_HOME}/tools/bin/sdkmanager "extras;android;m2repository"
-extras;android;m2repository 
 
 VOLUME ["/app","/dist"]
 
